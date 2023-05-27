@@ -1,0 +1,512 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.logo img {
+    height: 53px;
+}
+
+#main-menu>li {
+    float: left;
+    font-weight: bold;
+    padding: 16px 15px;
+    border-top: 4px solid rgb(0, 0, 0);
+    border-bottom: 4px solid rgb(0, 0, 0);
+    transition: all 0.35s ease-in;
+    cursor: pointer;
+
+}
+
+#main-menu li a {
+    font-size: 15px;
+    color: white;
+    display: block;
+
+}
+
+#main-menu li:hover {
+    background-color: rgb(253, 8, 0);
+    border-bottom: 4px solid white;
+    border-top: 4px solid rgb(253, 8, 0);
+}
+
+
+#login a {
+    display: block;
+    padding: 10px 15px;
+    border-radius: 15px;
+    background-color: rgb(250, 1, 1);
+    color: #fff;
+    font-weight: bold;
+    float: left;
+    margin-left: 15px;
+    font-size: 15px;
+    transition: all 0.25s ease-in;
+}
+
+#login a:hover {
+    transform: scale(1.1);
+}
+
+#timkiem {
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.thanhtim {
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background: none;
+    width: 250px;
+    font-size: 15px;
+}
+
+.nuttim {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 15px;
+    background-color: #fff;
+    cursor: pointer;
+
+}
+
+.nuttim p {
+    font-size: 15px;
+    transition: all 0.1s ease-in;
+}
+
+.nuttim:hover p {
+    transform: scale(1.2);
+    color: red;
+}
+
+#qc {
+    max-width: 100%;
+}
+
+#qc img {
+    width: 100%;
+
+
+}
+
+#main {
+    width: 100%;
+    background-color: rgb(238, 236, 236);
+    padding: 20px 30px;
+}
+
+#main>div {
+    border-radius: 10px;
+}
+#src {
+    background-color: white;
+    width: 85%;
+    margin: 20px auto;
+    padding: 15px 15px;
+    text-align: left;
+    font-weight: bold;
+    color: blue;
+}
+
+#src a {
+    color: blue;
+    cursor: pointer;
+}
+
+#src a:active {
+    color: red;
+}
+#view {
+    width: 85%;
+    background-color: white;
+    margin: 0 auto;
+    display: flex;
+}
+
+#sanpham {
+    padding: 30px 30px;
+    width: 50%;
+
+}
+
+#sanpham #chinh {
+    padding: 20px 20px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+#sanpham #phu {
+    padding: 5px 5px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+#sanpham #chinh img {
+    height: 400px;
+}
+
+#sanpham #phu img {
+    height: 60px;
+    border: 2px solid white;
+    margin: 0 10px;
+
+}
+#sanpham #phu img:hover{
+    border: 2px solid red;
+}
+
+#info {
+    border-radius: 10px;
+    width: 50%;
+    background-color: white;
+    padding: 30px 30px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+#info p {
+    margin: 0;
+}
+
+#info a {
+    font-weight: bold;
+    color: red;
+}
+
+.ten {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.danhgia {
+    font-size: 20px;
+}
+
+.star {
+    font-size: 25px;
+    color: rgb(255, 217, 0);
+}
+
+.loai {
+    font-size: 20px;
+}
+
+.ma {
+    font-size: 20px;
+}
+
+#soluong .sl {
+    font-size: 20px;
+}
+
+#soluong div {
+    display: inline-block;
+    border: 2px solid black;
+}
+
+#soluong div button {
+    border: none;
+    outline: none;
+    width: 40px;
+    height: 40px;
+}
+
+#soluong div button:active {
+    background-color: red;
+}
+
+#soluong div .number {
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.gia {
+    font-size: 25px;
+    color: red;
+    font-weight: bold;
+}
+
+.gia-cu {
+    font-size: 18px;
+    color: rgb(97, 97, 97);
+    font-weight: normal;
+}
+
+#info table {
+
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin: 15px auto;
+}
+
+#info table tr {
+    border-bottom: 1px solid black;
+
+}
+
+#info table tr td {
+    padding: 15px 15px;
+    width: 30%;
+}
+
+#nut {
+    margin-top: 20px;
+}
+
+#nut a {
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 10px;
+    margin-left: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+#nut .buy {
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+}
+
+#nut .add {
+    border: 1px solid red;
+    background-color: white;
+    color: red;
+}
+
+#nut a:hover {
+    transform: scale(1.1);
+}
+
+
+#goi-y {
+    width: 90%;
+    margin: 30px auto;
+    padding: 10px 0;
+    margin-bottom: 0;
+    background-color: white;
+}
+
+#goi-y>p {
+    margin: 20px 20px;
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#goi-y img {
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+#goi-y ul {
+    margin: 0;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#goi-y ul li {
+    margin: 10px 30px;
+    border-radius: 15px;
+    padding: 15px 10px;
+    border: 1px solid black;
+    transition: all 0.15s ease-out;
+}
+
+#goi-y ul li a {
+    display: block;
+}
+
+#goi-y ul li p {
+    text-align: center;
+    margin-bottom: 0;
+    color: red;
+}
+
+#goi-y ul li a .ten {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+#goi-y ul li a .danhgia {
+    font-size: 20px;
+color: rgb(255, 217, 0);
+}
+
+#goi-y ul li a .gia {
+    font-size: 15px;
+    color: red;
+}
+
+#goi-y ul li:hover {
+    transform: scale(1.05);
+}
+
+#group {
+    width: 90%;
+    margin: 30px auto;
+    margin-bottom: 0;
+  background-color: white;
+    padding: 30px 30px;
+}
+
+#bang-thongtin {
+    width: 60%;
+    margin: 0 auto;
+}
+
+#bang-thongtin p {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+#bang-thongtin table {
+    font-weight: bold;
+    color: rgb(134, 129, 129);
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: left;
+}
+
+#bang-thongtin table tr {
+    border: 1px solid black;
+}
+
+#bang-thongtin table tr td {
+    border: 1px solid black;
+    padding: 15px 15px;
+    width: 500px;
+}
+
+#khung-chu {
+    width: 90%;
+    margin: 30px auto;
+    margin-bottom: 0;
+    padding: 30px 30px;
+}
+#khung-chu h2{
+    text-align: left;
+    padding-left: 5%;
+    padding-bottom: 1%;
+}
+.khu1 img {
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+.khu1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.noidung {
+    line-height: 1.3;
+    text-align: left;
+    padding-left: 4%;
+}
+
+.noidung p {
+    font-size: 20px;
+}
+
+.noidung ul {
+    font-size: 18px;
+    list-style-type: disc;
+    margin-left: 20px;
+
+}
+
+.noidung ul li {
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+#footer {
+    max-width: 100%;
+    background-color: rgb(219, 219, 219);
+    padding: 25px 0;
+    text-align: center;
+}
+
+#footer1 {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+#footer1 p {
+    margin-bottom: 5px;
+}
+
+.dau {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#footer a {
+    color: black;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.hotline {
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#footer #footer1 #thongtin-shop {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#footer #footer1 #thongtin-shop a {
+    display: inline-block;
+    color: rgb(0, 132, 255);
+    font-size: 30px;
+    margin: 10px 15px;
+}

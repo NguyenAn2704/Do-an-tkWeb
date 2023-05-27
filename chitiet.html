@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="chitiet.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shop đồ chơi</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+                <img src="img/bieungu.png" alt="bieu-ngu">
+            </div>
+            <div id="search">
+                <form id="timkiem">
+                    <input type="text" class="thanhtim" placeholder="Bạn cần tìm gì ?">
+                    <button class="nuttim">
+                        <p><i class="fa-solid fa-magnifying-glass"></i></p>
+                        </ibutton>
+                </form>
+            </div>
+            <div class="menu">
+                <ul id="main-menu">
+                    <li><a href="./index.html"><i class="fa-solid fa-house"></i> Trang Chủ</a></li>
+                    <li><a href="./gthieu_banthan.html"><i class="fa-solid fa-address-card"></i> Giới Thiệu</a></li>
+                    <li><a href="./gthieu_banthan.html"><i class="fa-solid fa-phone"></i> Liên hệ</a></li>
+                    <li><a href="./gthieu_banthan.html"><i class="fa-solid fa-comment"></i> Blog</a></li>
+                    <li><a href="./gthieu_banthan.html"><i class="fa-solid fa-star"></i> Đánh Giá</a></li>
+                </ul>
+            </div>
+            <div id="login">
+                <a href="./dangnhap.html"><i class="fa-solid fa-user"></i> Đăng nhập</a>
+                <a href="./giohang.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="./gthieu_banthan.html"><i class="fa-solid fa-bell"></i></a>
+
+
+            </div>
+        </div>
+        <div id="qc">
+            <img src="img/qc.jpg" alt="quangcao">
+        </div>
+        <div id="main">
+            <div id="src"><a href="./index.html">Trang chủ</a> > <a href="./danhsach_sanpham.html">Danh sách sản
+                    phẩm</a>> Chi tiết</div>
+            <div id="view">
+                <div id="sanpham">
+                    <div id="chinh">
+                        <img src="img/chitiet/anh0.jpg" id="anh-chinh">
+                    </div>
+                    <div id="phu">
+                        <img class="anh-nh0" src="img/chitiet/anh0.jpg" onmouseover="doiAnh(this)" onmouseout="undo()">
+                        <img class="anh-nh0" src="img/chitiet/anh1.jpg" onmouseover="doiAnh(this)" onmouseout="undo()">
+                        <img class="anh-nh0" src="img/chitiet/anh2.jpg" onmouseover="doiAnh(this)" onmouseout="undo()">
+                        <img class="anh-nh0" src="img/chitiet/anh3.jpg" onmouseover="doiAnh(this)" onmouseout="undo()">
+                        <img class="anh-nh0" src="img/chitiet/anh4.jpg" onmouseover="doiAnh(this)" onmouseout="undo()">
+                    </div>
+                </div>
+                <div id="info">
+                    <p class="ten">Tàu Ngầm Mini Truy Tìm Kho Báu</p>
+                    <p class="danhgia">Đánh giá:<span class="star"> ★★★★☆</span></p>
+                    <p class="loai">Thương hiệu: <a href="#">LEGO</a></p>
+                    <p class="ma">Mã sản phẩm: 60263</p>
+                    <div id="soluong">
+                        <span class="sl">Số lượng: </span>
+                        <div>
+                            <button id="tang" onclick="tangSL()"><i class="fa-solid fa-plus"></i></button>
+                            <span class="number" id="sl">1</span>
+                            <button id="giam" onclick="giamSL()"><i class="fa-solid fa-minus"></i></button>
+                        </div>
+                        <span>&ensp;&ensp;(Còn 235 sản phẩm)</span>
+                    </div>
+                    <p class="gia">279,000 VNĐ <del class="gia-cu">399,000 VNĐ</del></p>
+                    <table>
+                        <tr>
+                            <td><i class="fa-solid fa-dollar-sign"></i> Hàng chính hãng, chứng nhận an toàn</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-cart-shopping"></i> Miễn phí giao hàng toàn quốc <b>đơn trên
+                                    500K</b></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-phone"></i> Liên hệ hỗ trợ: 2001215585</td>
+                        </tr>
+                    </table>
+                    <div id="nut">
+                        <a href="./giohang.html" class="buy"><i class="fa-regular fa-credit-card"></i> Mua ngay</a>
+                        <a href="./giohang.html" class="add"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+                    </div>
+
+                </div>
+
+            </div>
+            <div id="goi-y">
+                <p>Các sản phẩm khác</p>
+                <ul>
+                    <li><a href="./chitiet.html"><img src="img/sanpham/sp3.jpg" alt="sp1">
+                            <p class="ten">Chuồng ngựa</p>
+                            <p class="danhgia">Đánh giá: ★★★★☆</p>
+                            <p class="gia">639,000VNĐ</p>
+
+                        </a></li>
+                    <li><a href="./chitiet.html"><img src="img/sanpham/sp4.jpg" alt="sp1">
+                            <p class="ten">Xe đua Dodge Top</p>
+                            <p class="danhgia">Đánh giá: ★★★★☆</p>
+                            <p class="gia">1,469,000VNĐ</p>
+
+                        </a></li>
+                    <li><a href="./chitiet.html"><img src="img/sanpham/sp5.jpg" alt="sp1">
+                            <p class="ten">Phi cơ đua</p>
+                            <p class="danhgia">Đánh giá: ★★★★☆</p>
+                            <p class="gia">216,000VNĐ</p>
+
+                        </a></li>
+                    <li><a href="./chitiet.html"><img src="img/sanpham/sp6.jpg" alt="sp1">
+                            <p class="ten">Lâu đài Taj Mahal</p>
+                            <p class="danhgia">Đánh giá: ★★★★☆</p>
+                            <p class="gia">3,999,000VNĐ</p>
+
+                        </a></li>
+                    <li><a href="./chitiet.html"><img src="img/sanpham/sp7.jpg" alt="sp1">
+                            <p class="ten">Xe cứu hộ động vật</p>
+                            <p class="danhgia">Đánh giá: ★★★★☆</p>
+                            <p class="gia">223,000VNĐ</p>
+
+                        </a></li>
+                </ul>
+            </div>
+            <div id="group">
+                <div id="bang-thongtin">
+                    <p>Thông tin sản phẩm</p>
+                    <table>
+                        <tr>
+                            <td>Chủ đề</td>
+                            <td>LEGO CITY DEEP SEA</td>
+                        </tr>
+                        <tr>
+                            <td>Xuất xứ</td>
+                            <td>Trung Quốc</td>
+                        </tr>
+                        <tr>
+                            <td>Mã VT</td>
+                            <td>60263</td>
+                        </tr>
+                        <tr>
+                            <td>Tuổi</td>
+                            <td>4 tuổi trở lên</td>
+                        </tr>
+                        <tr>
+                            <td>Thương hiệu</td>
+                            <td>LEGO CITY</td>
+                        </tr>
+                        <tr>
+                            <td>Xuất xứ thương hiệu</td>
+                            <td>ĐAN MẠCH</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="khung-chu">
+                    <h2>LEGO CITY 60263 Tàu Ngầm Mini Truy Tìm Kho Báu ( 41 Chi tiết)</h2>
+                    <div class="khu1">
+                        <img src="img/chitiet/thongtin/anh1.jpg" alt="anh1">
+                        <img src="img/chitiet/thongtin/anh2.jpg" alt="anh2">
+                    </div>
+                    <div class="noidung">
+
+                        <p>Khám phá những bí ẩn của biển với Tàu ngầm nhỏ LEGO® City Ocean thú vị này. Mở buồng lái bong
+                            bóng của chiếc phụ mini và
+                            thám hiểm đáy biển! Chà! Một cái rương cũ! Điều động chiếc tàu được điều khiển bằng cánh
+                            quạt
+                            vào vị trí. Nhưng hãy coi
+                            chừng con cá mập đang lượn quanh!</p>
+                        <ul>
+                            <li>Bộ đồ chơi LEGO CITY 60263 Tàu Ngầm Mini Truy Tìm Kho Báu ( 41 Chi tiết) này là một món
+                                quà
+                                lý tưởng cho trẻ em từ 4
+                                tuổi trở lên và được thiết kế để khuyến khích các hoạt động nhập vai độc lập, sáng tạo.
+                            </li>
+                            <li>Có cái gì trong hộp vậy? Một chiếc tàu ngầm thám hiểm đồ chơi thú vị, bối cảnh đáy biển
+                                với
+                                rương kho báu của cướp biển,
+                                một phi công nhỏ và một hình cá mập. Tất cả những đứa trẻ cần được chơi đùa dưới sóng
+                                biển.
+                            </li>
+                            <li>Trẻ em sẽ thích chiếc tàu ngầm đồ chơi này với buồng lái bong bóng mở, cánh quạt quay và
+                                cánh tay kiểm tra có thể điều
+                                chỉnh được. Rương kho báu đi kèm với các yếu tố đá quý và con cá mập đầu búa có hàm mở.
+                            </li>
+                            <li>Bộ LEGO® 4+ là một cách thú vị để trẻ học nghệ thuật xây dựng LEGO. Với những viên gạch
+                                khởi
+                                đầu đặc biệt và hướng dẫn
+                                xây dựng được in đơn giản, chúng giúp trẻ em từng bước phát triển sự tự tin và khả năng
+                                của
+                                mình.</li>
+                            <li>Khi được chế tạo, đồ chơi tàu ngầm (có mở rộng cánh tay kiểm tra) có kích thước cao hơn
+                                2
+                                ""(6cm), dài 7"" (20cm) và
+                                rộng 2 ""(6cm). Và có rất nhiều chỗ trong buồng lái bong bóng cho phi công minifigure!
+                            </li>
+                            <li>Không cần pin - đồ chơi xây dựng Tàu ngầm mini dưới đáy đại dương này được hỗ trợ bởi
+                                trí
+                                tưởng tượng của trẻ em, vì
+                                vậy, niềm vui khám phá có thể bắt đầu ngay lập tức!
+                            </li>
+                            <li>Bộ đồ chơi 4+ này đi kèm với bản in hướng dẫn xây dựng và Hướng dẫn PLUS - một hướng dẫn
+                                xây
+                                dựng tương tác dành cho trẻ
+                                em. Có sẵn như một phần của ứng dụng LEGO® Building Guide miễn phí dành cho các thiết bị
+                                thông minh.</li>
+                            <li>EGO® City tự hào hỗ trợ công việc đột phá của National Geographic Explorers, những người
+                                giúp xây dựng một thế giới tốt
+                                đẹp hơn cho tất cả chúng ta. Bộ đồ chơi LEGO City Ocean giới thiệu cho trẻ em thế giới
+                                khám
+                                phá dưới nước đầy thú vị.</li>
+                        </ul>
+                    </div>
+                    <div class="khu1">
+                        <img src="img/chitiet/thongtin/anh3.jpg" alt="anh1">
+                        <img src="img/chitiet/thongtin/anh4.jpg" alt="anh2">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="footer">
+            <div id="footer1">
+                <div id="chamsoc">
+                    <p class="dau">HOTLINE CHĂM SÓC KHÁCH HÀNG</p>
+                    <p class="hotline"><i class="fa-solid fa-phone"></i> 2001215585</p>
+                    <p>Từ thứ Hai đến thứ Bảy (08:00 - 17:00)</p>
+                    <p>Chủ nhật (08:00 - 12:00)</p>
+                    <p class="hotline"><i class="fa-regular fa-envelope"></i> nguyenquocan1412@gmail.com</p>
+                </div>
+                <div id="dieukhoan">
+                    <p class="dau">ĐIỀU KHOẢN & CHÍNH SÁCH</p>
+                    <p><a href="#">- Chính sách giao hàng</a></p>
+                    <p><a href="#">- Chính sách tích lũy điểm<main></main></a></p>
+                    <p><a href="#">- Điều khoản điều kiện</a></p>
+                </div>
+                <div id="hotro">
+                    <p class="dau">HỖ TRỢ KHÁCH HÀNG</p>
+                    <p><a href="#">- Chính sách bảo mật</a></p>
+                    <p><a href="#">- Chính sách bảo hành đổi trả hàng hóa<main></main></a></p>
+                    <p><a href="#">- Chính sách thanh toán</a></p>
+                </div>
+                <div id="thongtin-shop">
+                    <p>THEO DÕI SHOP TẠI</p>
+                    <a href="https://www.facebook.com/" target="_blank" class="truyenthong"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" class="truyenthong"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank" class="truyenthong"><i class="fa-brands fa-youtube"></i></a>
+
+                </div>
+            </div>
+            <div id="footer2">
+                <p>Nguyễn Quốc An - 2001215585</p>
+                <p>Địa chỉ: 140 Lê Trọng Tấn, Tây Thạnh, Tân Phú, Thành phố Hồ Chí Minh</p>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="hieuung.js"></script>
+</body>
+
+</html>

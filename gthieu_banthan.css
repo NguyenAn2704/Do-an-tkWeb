@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 1
+}
+
+#header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.logo img {
+    height: 53px;
+}
+
+#main-menu>li {
+    float: left;
+    font-weight: bold;
+    padding: 16px 15px;
+    border-top: 4px solid rgb(0, 0, 0);
+    border-bottom: 4px solid rgb(0, 0, 0);
+    transition: all 0.35s ease-in;
+    cursor: pointer;
+
+}
+
+#main-menu li a {
+    font-size: 15px;
+    color: white;
+    display: block;
+
+}
+
+#main-menu li:hover {
+    background-color: rgb(253, 8, 0);
+    border-bottom: 4px solid white;
+    border-top: 4px solid rgb(253, 8, 0);
+}
+
+
+#login a {
+    display: block;
+    padding: 10px 15px;
+    border-radius: 15px;
+    background-color: rgb(250, 1, 1);
+    color: #fff;
+    font-weight: bold;
+    float: left;
+    margin-left: 15px;
+    font-size: 15px;
+    transition: all 0.25s ease-in;
+}
+
+#login a:hover {
+    transform: scale(1.1);
+}
+
+#timkiem {
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.thanhtim {
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background: none;
+    width: 250px;
+    font-size: 15px;
+}
+
+.nuttim {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 15px;
+    background-color: #fff;
+    cursor: pointer;
+
+}
+
+.nuttim p {
+    font-size: 15px;
+    transition: all 0.1s ease-in;
+}
+
+.nuttim:hover p {
+    transform: scale(1.2);
+    color: red;
+}
+
+#qc {
+    max-width: 100%;
+}
+
+#qc img {
+    width: 100%;
+
+
+}
+
+#main {
+    width: 100%;
+    background-color: rgb(238, 236, 236);
+    padding: 20px 30px;
+}
+
+#main>div {
+    border-radius: 10px;
+}
+
+#src {
+    background-color: white;
+    width: 70%;
+    margin: 0 auto;
+    padding: 15px 15px;
+    text-align: left;
+    font-weight: bold;
+    color: blue;
+}
+#src a{
+    color: blue;
+    cursor: pointer;
+}
+#src a:active{
+    color: red;
+}
+#intro {
+    
+    width: 70%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px 30px;
+}
+#intro h1{ margin: 15px auto;}
+#intro img{
+    width: 250px;
+    border-radius: 10px;
+    
+ 
+}
+#intro table{
+    margin: 0 auto;
+    border-collapse: collapse;
+
+}
+
+#intro td{
+    font-size: 20px;
+    text-align: left;
+    padding: 15px 15px;
+
+}
+#intro table tr .sothich{
+    text-align: center;
+}
+#footer {
+    max-width: 100%;
+    background-color: rgb(219, 219, 219);
+    padding: 25px 0;
+    text-align: center;
+}
+
+#footer1 {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+#footer1 p {
+    margin-bottom: 5px;
+}
+
+.dau {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#footer a {
+    color: black;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.hotline {
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#footer #footer1 #thongtin-shop {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#footer #footer1 #thongtin-shop a {
+    display: inline-block;
+    color: rgb(0, 132, 255);
+    font-size: 30px;
+    margin: 10px 15px;
+}
